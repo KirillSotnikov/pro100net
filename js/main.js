@@ -28,13 +28,19 @@ $('[data-comment]').click(function(){
     console.log('[data-comment="' + comment + '"]' + ' .comment_rate_hide_text');
     
 });
-// $('section.blog_comment .wrapper .blog_comment_container_rate .comment_rate_hide').click(function(){
-//     $('section.blog_comment .wrapper .modal').toggleClass('active');
-//     if($('section.blog_comment .wrapper .modal').hasClass('active')){
-//         $('.comment_rate_hide_text').html('Скрыть ответы');
-//         $('.comment_rate_hide_icon').addClass('active');
-//     } else {
-//         $('.comment_rate_hide_text').html('Показать ответы');
-//         $('.comment_rate_hide_icon').removeClass('active');
-//     }
-// });
+$('[data-tab]').click(function(){
+    var tab = $(this).attr('data-tab');
+    
+    $('.providers_tabul_container_modal').removeClass('active');
+    $('.providers_tabul_container_list_item').removeClass('active');
+    $(this).addClass('active');
+    $('.providers_tabul_container_modal' + tab).addClass('active');
+
+});
+
+$('section.providers_table .providers_table_container_content_item_compare img').click(function(){
+    $('.alert_compare').addClass('active');
+});
+$('.alert_compare .overlay').click(function(){
+    $('.alert_compare').removeClass('active');
+});
