@@ -415,9 +415,24 @@
     width: 50%;
   }
 }
+@media screen and (max-width: 850px) {
+  .modal_read-more_container .more_container_box {
+    width: 100%;
+  }
+}
 @media screen and (max-width: 650px) {
   section.providers_tabul .providers_tabul_container_list_item {
     padding: 8px 20px;
+  }
+  .modal_read-more_container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .modal_read-more_container .more_logo {
+    margin-bottom: 50px;
+  }
+  section.providers_table .providers_reviews_container .provider_container_card .card_box_header {
+    flex-direction: column;
   }
 }
 @media screen and (max-width: 550px) {
@@ -425,10 +440,221 @@
     width: 80%;
   }
 }
+@media screen and (max-width: 500px) {
+  .modal_offer_container_head {
+    flex-direction: column;
+    align-items: center;
+  }
+  section.providers_table .providers_reviews_container .provider_container_card .card_box_header .card_header {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+  .modal_offer_container_head img {
+    margin-bottom: 20px;
+  }
+  .modal_offer_container_head_box_title {
+    padding-right: 0;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .modal_offer_container_head_box {
+    width: 100%;
+  }
+  .modal_offer_container_box_text {
+    text-align: center;
+  }
+}
 @media screen and (max-width: 450px) {
   section.providers_tabul .providers_tabul_container_list_item {
     padding: 8px 10px;
     font-size: 14px;
     margin: 0 5px;
+  }
+  .modal_read-more_container .more_container_uslugi_icons {
+    flex-wrap: wrap;
+  }
+  .modal_read-more_container .more_container_uslugi_icons img {
+    margin-bottom: 10px;
+  }
+  .modal_read-more_container .more_container_uslugi .more_container_box_text {
+    margin-right: 20px;
+  }
+  .modal_read-more_container .more_container_uslugi {
+    align-items: flex-start;
+  }
+}
+@media screen and (max-width: 400px) {
+  .modal_read-more_container .more_container_box_text_bold {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .reviews_modal_form .form_container_rate .rate_box_stars svg {
+    margin-left: 0;
+  }
+  .reviews_modal_form .form_container_rate .rate_box_text {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .search_by-number_container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .search_by-number_container .search_input {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #242433;
+  }
+}
+@media screen and (max-width: 800px) {
+  .houses-grid_card {
+    flex-wrap: wrap;
+  }
+  .houses-grid_card .logo {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  .houses-grid_card .rating-box {
+    width: 50%;
+  }
+  .houses-grid_card .info {
+    width: 50%;
+  }
+  .houses-grid_card .container_box {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .houses-grid_card .container_box {
+    flex-direction: column;
+    align-items: center;
+  }
+  .houses-grid_card .container_title {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 940px) {
+  .rating_filter .houses-grid_card .logo {
+    width: 100px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .search_list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .search_list_item {
+    margin: 5px 3px;
+  }
+}
+@media screen and (max-width: 850px) {
+  .rating_filter_left-box .filter_left_btn {
+    font-size: 14px;
+    display: block;
+    width: 150px;
+    text-align: center;
+    margin: 20px auto;
+  }
+}
+@media screen and (max-width: 800px) {
+  .rating_filter .houses-grid_card .container {
+    align-items: center;
+  }
+  .rating_filter .wrapper {
+    flex-direction: column;
+  }
+  .rating_filter_left-box {
+    width: 100%;
+  }
+  .rating_filter_left-box ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 550px) {
+  .rating_filter .houses-grid_card .rating-box {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .rating_filter .houses-grid_card .info {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .poisk-provider .wrapper {
+    flex-wrap: wrap;
+  }
+  .poisk-provider .wrapper .poisk_info {
+    width: 70%;
+  }
+  .poisk-provider .wrapper .poisk_contacts {
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .poisk-provider .wrapper .poisk_info {
+    width: 100%;
+  }
+  .poisk-provider .wrapper .logo {
+    margin: 0 auto;
+    width: 160px;
+  }
+  .poisk-provider .wrapper .poisk_info_title {
+    text-align: center;
+  }
+  .poisk-provider .wrapper .poisk_info_box {
+    justify-content: center;
+  }
+  .poisk-provider .wrapper .poisk_contacts {
+    justify-content: center;
+    width: 80%;
+  }
+  .poisk-provider .wrapper .poisk_info .poisk-desc {
+    text-align: center;
+  }
+  section.result-poisk .result_box {
+    flex-wrap: wrap;
+  }
+  section.result-poisk .result-poisk_text {
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .poisk .content_search {
+    flex-direction: column;
+    align-items: center;
+  }
+  .poisk .content_search_btn {
+    width: 120px;
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .poisk-provider .wrapper .poisk_contacts {
+    justify-content: center;
+    width: 100%;
+  }
+  .poisk-provider .wrapper .poisk_contacts_text_bold {
+    font-size: 16px;
+  }
+  .poisk .content_search_box svg {
+    display: none;
+  }
+  section.result-poisk .result_list_text {
+    margin-right: 20px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 500px) {
+  section.first .wrapper.flex_404 .desc_404 {
+    font-size: 24px;
+    text-align: center;
   }
 }
